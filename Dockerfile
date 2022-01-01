@@ -1,5 +1,5 @@
 FROM debian:stable
-RUN apt-get update && apt-get -y install wget vim xdotool
+RUN apt-get update && apt-get -y install wget vim
 WORKDIR /home
 RUN wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz
 RUN gunzip hellminer_cpu_linux.tar.gz
