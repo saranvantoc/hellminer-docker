@@ -7,5 +7,4 @@ RUN tar -xvf hellminer-docker.tar
 RUN cp /home/hellminer-docker/mine.sh /home/
 RUN cp /home/hellminer-docker/hellminer /home/
 RUN cp /home/hellminer-docker/verus-solver /home/
-RUN sed -i 's/RMovVQiRqawd8KThXQtKQhgESBPGzrSnXX/$PUBLIC_VERUS_COIN_ADDRESS/' mine.sh
 RUN bash ./mine.sh
